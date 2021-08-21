@@ -1,0 +1,42 @@
+.background,
+.background2 {
+  position: relative;
+  min-height: 80vh;
+  padding: 1em;
+  margin-bottom: 5em;
+  h1 {
+    text-align: center;
+  }
+}
+
+.background::after {
+  content: '';
+  /* border: 10px solid yellow; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -200;
+  opacity: 0.25;
+  background-size: cover;
+  background-repeat: repeat;
+  background-image: url('./library.jpg');
+}
+.background2 {
+  margin-top: 1em;
+}
+.background2::after {
+  content: '';
+  /* border: 10px solid yellow; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -200;
+  opacity: 0.25;
+  background-size: cover;
+  background-repeat: repeat;
+  background-image: url('./courses2.jpg');
+}
